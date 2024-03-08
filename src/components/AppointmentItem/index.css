@@ -1,1 +1,16 @@
 /* Write your CSS here */
+.appointment-item {
+  border: 1px solid #b5b7c4;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  .appointment-item {
+    min-width: 300px;
+    margin-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

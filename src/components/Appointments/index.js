@@ -48,7 +48,7 @@ class Appointment extends Component {
     const {dateInput, titleInput} = this.state
 
     const formattedDate = dateInput
-      ? format(new Date(dateInput), 'dd MMMM YYYY,EEEE')
+      ? format(new Date(dateInput), 'dd MMMM yyyy,EEEE')
       : ''
 
     const newAppointment = {
@@ -67,6 +67,7 @@ class Appointment extends Component {
 
   getFilteredAppointmentList = () => {
     const {appointmentsList, isFilterActive} = this.state
+
     if (isFilterActive) {
       return appointmentsList.filter(
         eachTransaction => eachTransaction.isStarred === true,
